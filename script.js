@@ -1,12 +1,14 @@
 var p5Canvas;
 var myName;
 
+
 function setup() {
   p5Canvas = createCanvas(800, 600);
   p5Canvas.parent("#p5-canvas");
   myName = select("#my-name");
-  myName.html("Alexis]"); // enter your name here!
+  myName.html("Alexis"); // enter your name here!
 }
+
 
  /*
   full reference: https://p5js.org/reference/
@@ -25,5 +27,9 @@ function draw() {
   background(0, 255, 0); // try changing this to a blue background
   fill(255, 204, 0);    // Always call fill() before the shape you want to fill in.
   rect(30, 20, 55, 55); // Draw a 30x20 pixel rectangle at coordinate (55,55)
-ellipse(56, 46, 55, 55);
+  ellipse(100, 100, 80, 80);
+    line(0, 50, 100, 100);
+  rect(100, 50, 200, 75);
 }
+setup();
+draw();
